@@ -43,4 +43,14 @@ class PersonalAccessGrant extends AbstractGrant
     {
         return 'personal_access';
     }
+
+    /**
+     * Set the default scope.
+     *
+     * @param string $scope
+     */
+    public function setDefaultScope($scope)
+    {
+        $this->defaultScope = $scope;
+    }
 }
